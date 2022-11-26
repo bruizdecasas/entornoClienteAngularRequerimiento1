@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Videojuego } from '../../../../entornoClienteAngularRequerimiento1/src/app/entidades/videojuego';
+import { Videojuego } from '../entidades/videojuego';
 
 @Component({
   selector: 'app-detalle-videojuego',
@@ -7,13 +7,13 @@ import { Videojuego } from '../../../../entornoClienteAngularRequerimiento1/src/
   styleUrls: ['./detalle-videojuego.component.css']
 })
 export class DetalleVideojuegoComponent implements OnInit {
-@Input() videojuego : Videojuego;
-  constructor() { 
-    
+  // @Input() videojuego: Videojuego;
+  constructor() {
+
   }
 
   ngOnInit(): void {
-    console.log(this.videojuego)
+    // console.log(this.videojuego)
   }
 
 }
