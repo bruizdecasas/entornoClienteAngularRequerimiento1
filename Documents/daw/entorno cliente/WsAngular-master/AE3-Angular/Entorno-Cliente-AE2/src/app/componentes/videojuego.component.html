@@ -1,0 +1,55 @@
+<h1>FORMULARIOS</h1>
+
+<div> 
+    <button (click)="insertar()"  [disabled]="insertarDeshabilitado">Insertar</button>
+    <button (click)="modificar()" [disabled]="modificarBorrarDeshabilitado">Modificar</button>
+    <button (click)="borrar()"    [disabled]="modificarBorrarDeshabilitado">Borrar</button>
+    <button (click)="vaciar()">Vaciar</button>
+</div>
+
+<br/>
+
+<div>
+    <label for="idVideojuego">Id Videojuego</label>
+    <div>
+        <input id="idVideojuego" [(ngModel)]="idVideojuego"/>
+        <span class="rojo" *ngIf="!idVideojuegoObligatorioOculto">El idVideojuego es obligatorio</span>
+    </div>
+
+    <label for="nombre">Nombre</label>
+    <div>
+        <input id="nombre" [(ngModel)]="nombre"/>
+        <span class="rojo" *ngIf="!nombreObligatorioOculto">El nombre es obligatorio</span>
+    </div>    
+
+    <label for="compania">Compañía</label>
+    <div>
+        <input id="compania" [(ngModel)]="compania"/>
+        <span class="rojo" *ngIf="companiaObligatorioOculto">El universo es obligatorio</span>
+    </div>
+    
+</div>    
+
+<br/>
+
+<table>    
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Compañía</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let h of listaVideojuegos" (click)="seleccionar(h)">
+            <td>{{ h.idVideojuego }}</td>
+            <td>{{ h.nombre }}</td>
+            <td>{{ h.compania }}</td>
+        </tr>
+        <tr *ngIf="listaVideojuegos.length==0">
+            <td class="rojo" colspan="4">
+                No hay videojuegos en la lista
+            </td>
+        </tr>
+    </tbody>
+</table> 
