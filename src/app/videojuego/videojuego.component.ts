@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Videojuego } from 'src/app/entidades/videojuego';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Videojuego } from '../entidades/videojuego';
 
 
 @Component({
@@ -9,24 +10,17 @@ import { Videojuego } from 'src/app/entidades/videojuego';
 })
 
 export class VideojuegoComponent implements OnInit {
-
-  listaVideojuegos: Videojuego[] = []
-  videojuego: Videojuego | null = null
-
-  constructor() {
-    let videojuego: Videojuego = new Videojuego(1, "Diablo II", "Blizzard", "imagen", 8)
-    this.listaVideojuegos.push(videojuego);
-    videojuego = new Videojuego(2, "Age of Empires III", "Ensemble Studios", "imagen", 7)
-    this.listaVideojuegos.push(videojuego)
+  @Input() juego: Videojuego = {
+    id: 0,
+    compania: '',
+    nombre: '',
+    valoracion: 0,
+    imagen: ''
   }
-  //  @param heroe representa el heroe que queremos cargar en el formulario
 
-  public seleccionar(videojuego: Videojuego): void {
-
-    this.videojuego = videojuego
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
-    console.log(this.listaVideojuegos)
   }
 }

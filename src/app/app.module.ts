@@ -8,6 +8,7 @@ import { VideojuegoComponent } from './videojuego/videojuego.component';
 import { DetalleVideojuegoComponent } from './detalle-videojuego/detalle-videojuego.component';
 import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { ListaVideojuegosComponent } from './lista-videojuegos/lista-videojuegos.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     DetalleVideojuegoComponent,
     SobreNosotrosComponent,
     ContactoComponent,
-    VideojuegoComponent
+    VideojuegoComponent,
+    ListaVideojuegosComponent
   ],
   imports: [
     BrowserModule,
