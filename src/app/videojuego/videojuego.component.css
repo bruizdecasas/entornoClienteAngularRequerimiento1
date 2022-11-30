@@ -1,0 +1,30 @@
+
+.listaJuegos{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline;
+    grid-area: auto;
+    grid-template:auto;
+   
+
+}
+
+.item{
+    border: 3px antiquewhite;
+    border-radius: 5px;
+    padding: 7px;
+}
+.boton{
+    cursor: pointer;
+    transition: transform 2s ease 0s ;
+    padding: auto;
+    margin-left: 45%;
+    width: 10%;
+    background-color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.boton:hover{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    box-shadow: 3px 2px 2px 2px gray;
+}
