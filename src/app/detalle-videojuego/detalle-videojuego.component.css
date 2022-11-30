@@ -1,0 +1,20 @@
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.imagen{
+    width: 850px;
+    height: 400px;
+    display:block;
+    margin:auto;
+}
+.parrafo{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.volver{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}

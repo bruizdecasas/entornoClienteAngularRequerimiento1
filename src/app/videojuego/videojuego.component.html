@@ -1,8 +1,13 @@
-<li>
-    <p>{{ juego.id }}</p>
-    <p>{{ juego.nombre }}</p>
-    <p>{{ juego.compania }}</p>
-    <button [routerLink]="['/detalle']"
+
+<li class="listaJuegos">
+   
+    <p class="item">{{ juego.id }}</p>
+    <p class="item">{{ juego.nombre }}</p>
+    <p class="item">{{ juego.nombre }}</p>
+    <p class="item">{{ juego.compania }}</p>
+    <button class="boton" [routerLink]="['/detalle']"
+    
         [queryParams]="{id: juego.id, nombre: juego.nombre, compania: juego.compania, imagen: juego.imagen, valoracion: juego.valoracion}">Ver
         detalle</button>
+    
 </li>

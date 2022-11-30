@@ -1,0 +1,12 @@
+h2{
+      
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
+}
+.texto{
+background-color: rgb(244, 241, 237);
+display: flex;
+text-align: center;
+font-size: medium;
+}
